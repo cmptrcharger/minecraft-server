@@ -1,0 +1,23 @@
+Groups:
+   member:
+      default: true
+      permissions:
+       - mc.member
+      
+   mod:
+      default: false
+      permissions:
+       - mc.mod
+       - mc.member
+   admin:
+      default: false
+      permissions:
+       - mc.admin
+       - mc.mod
+       - mc.member
+   owner:
+      default: false
+      permissions:
+       - mc.member
+       - mc.mod
+       - mc.admin
