@@ -17,14 +17,16 @@ public class BoomCommand implements CommandExecutor {
             Location l = player.getLocation();
             World world = l.getWorld();
             int x = 0;
+            boolean fire = false;
             if(args.length>0){
                 try{
                     x = Integer.parseInt(args[0]);
+                    fire = Boolean.parseBoolean(args[1]);
                 }catch(NumberFormatException nfe){
                     nfe.printStackTrace();
                 }
             }
-            world.createExplosion(l, x);
+            world.createExplosion(l, x, fire);
         }else{
             sender.sendMessage("You must be a player!");
         }

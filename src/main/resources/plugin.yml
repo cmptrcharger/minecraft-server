@@ -14,3 +14,6 @@ commands:
    stopspam:
       description: Stops spam.
       usage: /<command>
+   boom:
+      description: boom.
+      usage: /<command>
