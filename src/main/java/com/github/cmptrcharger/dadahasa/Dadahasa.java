@@ -28,6 +28,7 @@ public class Dadahasa extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getLogger().info("Hello, plugin has started up correctly!");
+        getServer().getPluginCommand("boom").setExecutor(new BoomCommand());
 
         WorldCreator wc = new WorldCreator("ArcadeMap");
         Bukkit.createWorld(wc);
